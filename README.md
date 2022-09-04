@@ -4,6 +4,13 @@
   QRCODE
 </h2>
 
+<p align="center">
+    <img src="https://img.shields.io/github/languages/count/MatheusPrudente/QRCODE"/>
+    <img src="https://img.shields.io/github/repo-size/MatheusPrudente/QRCODE"/>
+    <img src="https://img.shields.io/github/last-commit/MatheusPrudente/QRCODE"/>
+    <img src="https://img.shields.io/github/issues/MatheusPrudente/QRCODE"/>
+</p> 
+
 ## 	:rocket: Tecnologias 
 
 Este projeto foi desenvolvido com as seguintes tecnologias : 
@@ -14,4 +21,4 @@ Este projeto foi desenvolvido com as seguintes tecnologias :
 
 ## :desktop_computer: Projeto
 
-  Projeto foi desenvolvido com base no tutorial *__Como gerar um QR CODE com JAVASCRIPT | Google Charts API__* do Canal pela [João Tinti](https://www.youtube.com/watch?v=E1gPN6LmH00).
+  Projeto foi desenvolvido com base no tutorial *__Como gerar um QR CODE com JAVASCRIPT | Google Charts API__* do Canal [João Tinti](https://www.youtube.com/watch?v=E1gPN6LmH00).
