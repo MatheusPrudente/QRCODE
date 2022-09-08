@@ -21,4 +21,4 @@ Este projeto foi desenvolvido com as seguintes tecnologias :
 
 ## :desktop_computer: Projeto
 
-  Projeto foi desenvolvido com base no tutorial *__Como gerar um QR CODE com JAVASCRIPT | Google Charts API__* do Canal [João Tinti](https://www.youtube.com/watch?v=E1gPN6LmH00).
+  Projeto foi desenvolvido com base nos tutoriais *__Como gerar um QR CODE com JAVASCRIPT | Google Charts API__* do Canal [João Tinti](https://www.youtube.com/watch?v=E1gPN6LmH00) e *__CSS QR Code Scanner Animation Effects | Html CSS__*[Online Tutorials](https://www.youtube.com/watch?v=W9XEARppU8s) .

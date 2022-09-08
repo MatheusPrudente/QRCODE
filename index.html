@@ -4,15 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <script src="./scripts.js" defer></script>
   <title>QRcode</title>
 </head>
 <body>
-  <h1>Crie seu QRcode</h1>
-  <textarea maxlength="256" rows="4"></textarea>
-  <br>
-  <button onclick="gerarQRCode()">Gerar QRcode</button>
-  <br>
-  <img id="QRCodeImage">
+  
+  <div class="box">
+    <h1>Crie seu QRcode</h1>
+    <textarea maxlength="256" rows="4" class="inputBox"></textarea>
+    <button onclick="gerarQRCode()">Gerar</button>
+  </div>
+
+  <div class="scan">
+    <div class="qrcode">
+    </div>
+    <!--<h3>QR CODE SCANNING.....</h3>-->
+    <div class="border"></div>
+  </div>
+  <div class="qrcodediv">
+    <img id="QRCodeImage">
+  </div>
 </body>
 </html>

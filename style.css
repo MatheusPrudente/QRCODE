@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+    flex-direction: column;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    text-align: center;
+}
+
+.box h1 {
+    margin-block: 40px 10px;
+    opacity: 0.9;
+    color: #fff;
+}
+
+.box textarea {
+    margin-block: 30px 10px;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding: 5px;
+    border-radius: 0.5em;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    background-color: #333;
+    flex-grow: 1;
+    caret-color: currentcolor;
+    outline-offset: -0.0625rem;
+    outline-style: solid;
+    outline-width: 0.0625rem;
+    outline-color: transparent;
+    color: #fff;
+}
+
+.box textarea:focus {
+    outline-color: rgb(233, 233, 233);
+}
+
+.box button {
+    margin-block: 10px;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 0.5em;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    background: #333;
+    color: #fff;
+    border: 0px;
+}
+
+.box button:hover {
+   background: rgb(85, 85, 85);
+}
+
+.scan {
+    margin-top: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.scan .qrcode {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: url(./assets/QR_Code01.png);
+    background-size: 150px;
+}
+
+.scan .qrcode::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(./assets/QR_Code02.png);
+    background-size: 150px;
+    animation: animate 4s ease-in-out infinite;
+    overflow: hidden;
+}
+
+.scan .qrcode::after {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    width: calc(100% - 40px);
+    height: 2px;
+    background: #82efef;
+    filter: drop-shadow(0 0 20px #82efef) drop-shadow(0 0 60px #82efef);
+    animation: animationLine 4s ease-in-out infinite;
+}
+
+.scan h3 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.border {
+    position: absolute;
+    inset: 0;
+    background: url(./assets/border.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    animation: animationText 0.5s linear infinite;
+}
+
+.qrcodediv {
+    margin-top: 25px;
+    display: none;
+}
+
+.qrcodediv img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-size: 150px;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        height: 20px;
+    }
+
+    50% {
+        height: calc(100% - 20px)
+    }
+}
+
+@keyframes animationLine {
+
+    0% {
+        top: 20px
+    }
+
+    50% {
+        top: calc(100% - 20px);
+    }
+}
+
+@keyframes animationText {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
